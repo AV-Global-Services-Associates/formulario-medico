@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AV GLOBAL SERVICES & ASSOCIATES - Formulario de Contacto de Proveedor Médico</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  h1, h2 {
+    text-align: center;
+    color: #333;
+  }
+  form {
+    margin-top: 20px;
+  }
+  label {
+    font-weight: bold;
+    color: #666;
+  }
+  input[type="text"], input[type="tel"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  textarea {
+    height: 100px;
+  }
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>AV GLOBAL SERVICES & ASSOCIATES</h1>
+  <h2>Formulario de Contacto de Proveedor Médico</h2>
+  <form action="mailto:admin@avglobalpr.com" method="post" enctype="text/plain">
+    <label for="clinic_name">Nombre de la Clínica:</label>
+    <input type="text" id="clinic_name" name="clinic_name" required>
+
+    <label for="contact_name">Nombre del Contacto:</label>
+    <input type="text" id="contact_name" name="contact_name" required>
+
+    <label for="phone_number">Número Telefónico:</label>
+    <input type="tel" id="phone_number" name="phone_number" required>
+
+    <label for="email">Correo Electrónico:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="info_requested">Información Solicitada:</label><br>
+    <input type="checkbox" id="asesoria_empresarial" name="info_requested[]" value="Asesoría Empresarial">
+    <label for="asesoria_empresarial">Asesoría Empresarial</label><br>
+    <input type="checkbox" id="asesoria_facturacion" name="info_requested[]" value="Asesoría para Optimizar Facturación">
+    <label for="asesoria_facturacion">Asesoría para Optimizar Facturación</label><br>
+    <input type="checkbox" id="servicios_facturacion" name="info_requested[]" value="Servicios de Facturación">
+    <label for="servicios_facturacion">Servicios de Facturación</label><br>
+    <input type="checkbox" id="servicios_cobro" name="info_requested[]" value="Servicios de Cobro">
+    <label for="servicios_cobro">Servicios de Cobro</label><br>
+    <input type="checkbox" id="asistente_virtual" name="info_requested[]" value="Asistente Virtual">
+    <label for="asistente_virtual">Asistente Virtual</label><br>
+    <input type="checkbox" id="apoyo_aseguradora" name="info_requested[]" value="Apoyo ante la Aseguradora">
+    <label for="apoyo_aseguradora">Apoyo ante la Aseguradora</label><br>
+    <input type="checkbox" id="otro" name="info_requested[]" value="Otro">
+    <label for="otro">Otro:</label>
+    <input type="text" id="other_info" name="other_info"><br>
+
+    <label for="comments">Comentarios:</label>
+    <textarea id="comments" name="comments" maxlength="500"></textarea>
+
+    <input type="submit" value="Enviar">
+  </form>
+</div>
+
+</body>
+</html>
